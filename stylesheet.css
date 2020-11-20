@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 * {
     margin: 0;
     padding: 0;
-   
+  
    
     
 }
@@ -11,30 +12,84 @@
 
 
 /***********************Navigation bar***********************************/
+
 .nav-bar {
     width: 100%;
-    height: 75%;
-    background-image:  url(img/designer_4xwithLogonew.jpg);
-    filter: grayscale(0);
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
-    
-    background-size: cover;
-    margin: auto;
-    border: 3px solid black;
-    margin-bottom:0px;
+   
     display:block;
-    box-shadow: 0 80px 400px rgb(0, 0, 0);
+    
    
     
 }
-/*************black strip*************/
-.navbar{
+.nav-bar .banner{
+    height: auto;
+   
+    position: relative;
+    display: block;
+   
+    
+    
+}
+.nav-bar .banner p{
+   
+    position: absolute;
+    z-index: 25;
     width: 100%;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.068);
+    margin: auto;
+    height: 55vh; 
     
+    align-items: center;
+   text-align: center;
+   justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Goldman', cursive;
+    font-size: 40px;
+    display: flex;
+ 
+}
+.nav-bar .banner p br{
+    display: block;
+    
+    font-size: 10px;
+}
+
+
+.nav-bar  .banner img{
+  position: relative;
+  top: -75px;
+    width: 100%;
+    height: auto;
+    display: block;
+   
+    
+}
+
+.nav-bar .greet{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    padding-bottom: 15%;
+    z-index: 20;
+    margin:  auto;
+    
+}
+
+/*************black strip*************/
+.nav-bar  .navbar{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.383);
+    z-index: 35;
+   
+   position: absolute;
    
 }
+
 .navbar-toggler  {
     border-color: rgb(255, 255, 255) !important;
     background-color: rgb(255, 255, 255)!important;
@@ -63,7 +118,7 @@
 .navbar-nav li .ok{
     color: white!important;
     
-    border-bottom: 2px solid #ffffff; ;
+    border-bottom: 2px solid #ffffff; 
     
 }
 
@@ -72,9 +127,10 @@
  }
  .nav-bar ul li{
      list-style: none;
+    
  }
  .nav-bar ul li a{
-     
+    color: white!important;
      margin: 10rem 3rem;
      position: relative;
      letter-spacing: 2px;
@@ -121,7 +177,9 @@
     padding-top: 0px;
     padding-bottom: 0px;
     color: #555;
+    border-bottom: 1px solid rgb(172, 161, 161);
     
+   
    
 }
 
@@ -129,6 +187,7 @@ h1 {
     text-align: center;
     color: #555;
     padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
 }
 
 h1::after {
@@ -140,102 +199,154 @@ h1::after {
     margin: 20px auto 5px;
 }
 .team .container {
+    position: relative;
     display: block;
     
     max-width: 90%;
+   
+    align-items: center;
+    flex-wrap: wrap;
 }
-.Introd h2{
-color: rgb(3, 3, 3);
-font-family: Comic Sans MS;
-font-size: 25px;
-text-decoration: underline;
-}
-.Introd p{
+
+.team .container .row{
+   
+    position: relative;
+    justify-content: center;
     
-    font-family: cursive;
+    height: auto;
+   
+}
+.team .container .row .card-in {
+    
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    
+    
+   
+
+ 
+}
+.team .container .row .card-in img {
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+ 
+}
+.team .container .row .card-in .content-in {
+    position: absolute;
+    bottom: 8px;
+    left: -11px;
+    
+    box-shadow: 0px 5px 10px #0640ff;
+    padding: 5px 5px 0 5px;
+    background: linear-gradient(45deg, rgba(226, 6, 255, 0.719), rgba(0, 0, 255, 0.76));
+    color: rgb(255, 255, 255);
+    
+ 
+}
+.team .container .row .card-in .content-in:hover h6 {
+   font-size: 25px;
+   transition: 0.7s ease-in-out;
+ 
+}
+
+.team .container .row .introd{
+    padding: 40px 0px 40px 0px;
+
+text-align: center;
+font-family: Poppin;
+position: relative;
+    height: auto;
+   
+}
+.team .container .row .introd p{
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+text-align: justify;
+font-family: Poppin;
+position: relative;
+   
    
 }
 
-.profile-pic {
-    margin-top: 25px;
 
-}
-
-.profile-pic .img-box {
-    opacity: 1;
+/*****************Experience***************************/
+.tech{
+    margin-top: 70px;
+    
+    text-align: center;
     display: block;
+    
+   
+}
+
+.tech .main-container-exp{
+    display: flex;
+    margin: 0 10% 0 10%;
+}
+.tech .main-container-exp .container-Exp{
     position: relative;
+    left:  10px;
+   padding-top: 10px;
+   width: 50%;
+  
+}
+
+.tech .main-container-exp .company{
+  float: right;
+    right: 10%;
+    padding-top: 0px;
+    width: 30%;
+    height: auto;
+    margin-left: 20%;
+  
+ }
+ .tech .main-container-exp .company img{
+    max-width:  auto;
+    width: 80%;
+ }
+
+
+/*************download****************/
+.download{
+    width: auto;
+    padding-bottom: 5%;
+    margin-top: 3%;
+   
+   
+    
+}
+.download .downbutton{
+    display: block;
+    width: fit-content;
+    margin: auto;
+   
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.download .downbutton .btn{
+    color:rgb(255, 255, 255);
+    background-color: rgb(71, 146, 245);
+    border: none;
+    box-shadow: 0 5px 20px black;
+    
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 100px 100px 100px 100px;
     
 
 }
-
-.profile-pic .img-box img {
-    filter: grayscale(1);
-    width: 60%;
-    box-shadow: 0 2px 20px #333;
-
-}
-
-.profile-pic .img-box img:hover {
-    filter: grayscale(0);
-    cursor: pointer;
-    box-shadow: 0 2px 20px #007bff;
-
-}
-
-.profile-pic h2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
-    color: #007bff !important;
-}
-
-.profile-pic h3 {
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
-
-}
-
-.team .fab {
-    height: 50px;
-    width: 50px;
-    color: #0761c8 !important;
-    background: rgb(255, 255, 255);
-    padding: 6px;
-    padding-top: 16px;
-    border-radius: 50%;
-    border: 1px solid black;
-    font-size: 20px;
+.download .downbutton .btn:hover{
+    background-color: rgb(0, 153, 0);
+    box-shadow: 0px 5px 30px rgb(96, 0, 175);
     
-    
-    
-}
-
-.img-box ul {
-    padding: 15px 0;
-    position: absolute;
-    z-index: 2;
-    left: 23%;
-    top: 80%;
-    transform: translateX(-50);
-    opacity: 0;
-
-}
-
-.img-box ul li {
-    padding: 5px;
-    display: inline-block;
-}
-
-.img-box:hover ul {
-    opacity: 1;
-    
-}
-
-.img-box ul,
-.img-box ul li {
-    transition: 0.5s;
 }
 
 /****************PROJECT CARD********************/
@@ -263,16 +374,16 @@ text-decoration: underline;
 } **/
 .flipcardmain{
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.239)), url(img/cover_d.jpg);
-    
-    clip-path: polygon(0 14%, 100% 0%, 100% 88%, 0% 100%);
+    /**background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.239)), url(img/whitewallpaper.jpg);**/
+    background: linear-gradient(45deg,rgba(204, 1, 255, 0.5), rgba(0, 0, 255, 0.705));
+    clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
      /*background-image: url(img/cover.png);*/
      background-size: cover;
      background-position: center;
      color: #fafafa !important;
      background-attachment: fixed;
      padding-top: 50px;
-     padding-bottom: 50px;
+    
      width: 100%;
     
      /*background: chocolate;*/
@@ -280,7 +391,9 @@ text-decoration: underline;
     
  } 
  .flipcardmain h1{
-     color: white;
+    margin-top: 3%;
+    color: rgb(53, 51, 51);
+    margin-bottom: 3%;
  }
  .flipcardmain .container{
     
@@ -397,7 +510,7 @@ text-decoration: underline;
 
 /*******************COntact**************/
 .footermain{
-    margin-top: 40px;
+   
     
     background: rgb(83, 76, 76);
     height: 200px;
